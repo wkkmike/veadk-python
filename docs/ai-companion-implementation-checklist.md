@@ -4,11 +4,22 @@
 
 | 模块 | 选择 | 状态 |
 |------|------|------|
-| 短期记忆 | ✅ **方案A：纯Redis** | 已确认 |
-| 长期记忆 | VikingDB + MySQL + TOS | 待实施 |
-| 大模型 | doubao-seed-character (主) + doubao-pro/lite (备) | 待实施 |
+| 短期记忆 | ✅ **方案A：纯Redis** | ✅ 设计完成 |
+| 长期记忆 | ✅ **VikingDB + MySQL + TOS** | ✅ 设计完成 |
+| 大模型 | ✅ **doubao-seed-character (主) + doubao-pro/lite (备)** | ✅ 设计完成 |
 | 开发语言 | Python | 已确认 |
 | 部署平台 | 火山云 VKE | 待实施 |
+
+## 设计文档清单
+
+| 文档 | 路径 | 内容 |
+|------|------|------|
+| 主架构设计 | `ai-companion-architecture.md` | 整体架构、组件选型 |
+| 详细流程设计 | `ai-companion-detailed-flows.md` | 时序图、状态机、降级流程 |
+| 技术选型指南 | `ai-companion-tech-selection.md` | 方案对比、实施路线 |
+| 短期记忆实现 | `ai-companion-short-memory-impl.md` | Redis方案A完整代码 |
+| 长期记忆实现 | `ai-companion-long-memory-impl.md` | VikingDB+MySQL+TOS+Worker |
+| 大模型服务 | `ai-companion-llm-service-impl.md` | 熔断器+降级链+流式输出 |
 
 ---
 
